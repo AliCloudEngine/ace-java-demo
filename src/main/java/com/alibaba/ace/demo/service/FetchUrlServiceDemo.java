@@ -22,7 +22,7 @@ public class FetchUrlServiceDemo extends HttpServlet {
 
         final String url = "http://www.taobao.com";
         String body = fetchUrlService.get(url);
-        resp.getWriter().printf("Fetch text from url %s: %s...\n", url, body.substring(256));
+        resp.getWriter().printf("Fetch text from url %s: %s...\n", url, body.substring(0, 256));
     }
 
     @Override
