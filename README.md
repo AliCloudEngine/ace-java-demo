@@ -27,6 +27,8 @@ Demo应用，演示ACE的功能：
 
 更多信息，参见[ACE控制台使用文档](http://help.aliyun.com/manual?spm=0.0.0.0.JtUkjp&lastSortId=278)。
 
+> 本Demo的线上运行的应用的URL： http://ace-showcase.aliapp.com/ 。
+
 FAQ
 ---------------------------------
 
