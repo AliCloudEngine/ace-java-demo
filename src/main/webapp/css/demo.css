@@ -2,4 +2,7 @@ body {
     font-family: Verdana, Helvetica, sans-serif;
     background-color: #FFFFCC;
 }
-div.appName {font-size:30px;}
+
+div.appName {
+    font-size: 30px;
+}

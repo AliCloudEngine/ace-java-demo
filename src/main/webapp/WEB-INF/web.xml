@@ -2,14 +2,10 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-	<servlet>
-		<servlet-name>HelloAce</servlet-name>
-		<servlet-class>com.alibaba.ace.demo.HelloAce</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>HelloPaasService</servlet-name>
-		<servlet-class>com.alibaba.ace.demo.HelloPaasService</servlet-class>
-	</servlet>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
 	<servlet>
 		<servlet-name>helloJSP</servlet-name>
 		<jsp-file>/HelloAce.jsp</jsp-file>
@@ -18,19 +14,42 @@
 			<param-value>ACE.demo</param-value>
 		</init-param>
 	</servlet>
+
+	<servlet>
+		<servlet-name>HelloAce</servlet-name>
+		<servlet-class>com.alibaba.ace.demo.HelloAce</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CacheServiceDemo</servlet-name>
+		<servlet-class>com.alibaba.ace.demo.CacheServiceDemo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>StoreServiceDemo</servlet-name>
+		<servlet-class>com.alibaba.ace.demo.StoreServiceDemo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FetchUrlServiceDemo</servlet-name>
+		<servlet-class>com.alibaba.ace.demo.FetchUrlServiceDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>helloJSP</servlet-name>
+		<url-pattern>/HelloAce.jsp</url-pattern>
+	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>HelloAce</servlet-name>
 		<url-pattern>/HelloAce.do</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>HelloPaasService</servlet-name>
-		<url-pattern>/HelloPaasService.do</url-pattern>
+		<servlet-name>CacheServiceDemo</servlet-name>
+		<url-pattern>/CacheServiceDemo.do</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>helloJSP</servlet-name>
-		<url-pattern>/HelloAce.jsp</url-pattern>
+		<servlet-name>StoreServiceDemo</servlet-name>
+		<url-pattern>/StoreServiceDemo.do</url-pattern>
 	</servlet-mapping>
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
+	<servlet-mapping>
+		<servlet-name>FetchUrlServiceDemo</servlet-name>
+		<url-pattern>/FetchUrlServiceDemo.do</url-pattern>
+	</servlet-mapping>
 </web-app>
