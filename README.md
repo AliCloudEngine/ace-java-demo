@@ -13,7 +13,7 @@ Demo应用，演示ACE的功能：
 
 - [下载](http://maven.apache.org/download.cgi)`Maven`，推荐下载版本`2.2.1`。
 - `Maven`的配置。压缩下载的`Maven`，把`bin`添加`PATH`上。
-- 编译和打包，使用命令`mvn install`。
+- 编译和打包，使用命令`mvn install`。在工程的`target`目录会生成Web应用的`war`包。
 
 更多的`Maven`的信息，参见[Maven官网](http://maven.apache.org/)。
 
