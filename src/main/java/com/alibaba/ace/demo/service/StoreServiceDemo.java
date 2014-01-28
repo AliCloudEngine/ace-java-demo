@@ -1,4 +1,4 @@
-package com.alibaba.ace.demo;
+package com.alibaba.ace.demo.service;
 
 import com.alibaba.appengine.api.store.StoreService;
 import com.alibaba.appengine.api.store.StoreServiceFactory;

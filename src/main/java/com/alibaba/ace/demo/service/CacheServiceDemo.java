@@ -1,5 +1,6 @@
-package com.alibaba.ace.demo;
+package com.alibaba.ace.demo.service;
 
+import com.alibaba.ace.demo.model.User;
 import com.alibaba.appengine.api.cache.CacheService;
 import com.alibaba.appengine.api.cache.CacheServiceFactory;
 
@@ -21,6 +22,7 @@ public class CacheServiceDemo extends HttpServlet {
 
         CacheService cacheService = CacheServiceFactory.getCacheService();
 
+        // Test String
         final String key = "FooKey";
         final String value = "cache-value";
 
@@ -35,6 +37,21 @@ public class CacheServiceDemo extends HttpServlet {
         } else {
             resp.getWriter().printf("Fail to get, expect %s, actual %s!\n", value, get);
         }
+
+        // Test Pojo
+        final User user = new User();
+        user.setName("Shylock");
+        user.setSex(true);
+        user.setAge((byte) 20);
+        user.setWeight(150);
+        final String cacheKey = "UserKey";
+
+        resp.getWriter().printf("Save value %s to key %s.\n", cacheKey, user);
+        boolean success = cacheService.put(cacheKey, user);
+        resp.getWriter().println("cache put result:" + success);
+
+        User cacheUser = (User) cacheService.get(cacheKey);
+        resp.getWriter().printf("Read value %s to key %s.\n", cacheKey, cacheUser);
     }
 
     @Override

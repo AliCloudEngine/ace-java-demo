@@ -1,4 +1,4 @@
-package com.alibaba.ace.demo;
+package com.alibaba.ace.demo.service;
 
 import com.alibaba.appengine.api.fetchurl.FetchUrlService;
 import com.alibaba.appengine.api.fetchurl.FetchUrlServiceFactory;

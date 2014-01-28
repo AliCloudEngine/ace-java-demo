@@ -4,6 +4,9 @@ ACE Demo Application
 Demo应用，演示ACE的功能：
 
 - ACE服务的使用
+    - `Cache`服务（缓存）
+    - `Store`服务（文件存储）
+    - `FetchUrl`服务（Http请求代理）
 - ACE环境配置的读取
 
 如何编译打包

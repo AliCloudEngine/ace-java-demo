@@ -16,29 +16,25 @@
 	</servlet>
 
 	<servlet>
-		<servlet-name>HelloAce</servlet-name>
-		<servlet-class>com.alibaba.ace.demo.HelloAce</servlet-class>
-	</servlet>
-	<servlet>
 		<servlet-name>CacheServiceDemo</servlet-name>
-		<servlet-class>com.alibaba.ace.demo.CacheServiceDemo</servlet-class>
+		<servlet-class>com.alibaba.ace.demo.service.CacheServiceDemo</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>StoreServiceDemo</servlet-name>
-		<servlet-class>com.alibaba.ace.demo.StoreServiceDemo</servlet-class>
+		<servlet-class>com.alibaba.ace.demo.service.StoreServiceDemo</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>FetchUrlServiceDemo</servlet-name>
-		<servlet-class>com.alibaba.ace.demo.FetchUrlServiceDemo</servlet-class>
+		<servlet-class>com.alibaba.ace.demo.service.FetchUrlServiceDemo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogServiceDemo</servlet-name>
+		<servlet-class>com.alibaba.ace.demo.service.LogServiceDemo</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>helloJSP</servlet-name>
 		<url-pattern>/HelloAce.jsp</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>HelloAce</servlet-name>
-		<url-pattern>/HelloAce.do</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>CacheServiceDemo</servlet-name>
@@ -51,5 +47,9 @@
 	<servlet-mapping>
 		<servlet-name>FetchUrlServiceDemo</servlet-name>
 		<url-pattern>/FetchUrlServiceDemo.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogServiceDemo</servlet-name>
+		<url-pattern>/LogServiceDemo.do</url-pattern>
 	</servlet-mapping>
 </web-app>

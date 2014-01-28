@@ -10,10 +10,6 @@ public class User implements Serializable {
     private byte age;
     private int weight;
 
-    public String toString() {
-        return "name:" + name + ", sex:" + sex + ", age:" + age + ",weight:" + weight;
-    }
-
     public String getName() {
         return name;
     }
@@ -45,5 +41,15 @@ public class User implements Serializable {
 
     public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", sex=" + sex +
+                ", age=" + age +
+                ", weight=" + weight +
+                '}';
     }
 }
