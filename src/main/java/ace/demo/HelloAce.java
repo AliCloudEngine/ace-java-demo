@@ -1,4 +1,4 @@
-package com.alibaba.ace.demo;
+package ace.demo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

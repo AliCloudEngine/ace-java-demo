@@ -1,4 +1,4 @@
-package com.alibaba.ace.demo.model;
+package ace.demo.model;
 
 import java.io.Serializable;
 

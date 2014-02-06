@@ -1,6 +1,6 @@
-package com.alibaba.ace.demo.service;
+package ace.demo.service;
 
-import com.alibaba.ace.demo.model.User;
+import ace.demo.model.User;
 import com.alibaba.appengine.api.cache.CacheService;
 import com.alibaba.appengine.api.cache.CacheServiceFactory;
 
