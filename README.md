@@ -1,14 +1,14 @@
-ACE Demo Application
+ACE Java Demo Application
 ===================================
 
-Demo应用，演示ACE的功能：
+Demo应用，演示`ACE`的功能：
 
-- ACE服务的使用
+- `ACE`服务的使用
     - `Cache`服务（缓存）
     - `Store`服务（文件存储）
     - `FetchUrl`服务（Http请求代理）
     - `Log`服务（收集日志在ACE控制台上查看）
-- ACE环境配置的读取
+- `ACE`环境配置的读取
 
 代码如何使用，请直接看示例代码实现。
 
@@ -28,7 +28,7 @@ Demo应用，演示ACE的功能：
 
 登陆[ACE控制台](http://ace.console.aliyun.com/)，上传`War`包运行。
 
-更多信息，参见[ACE控制台使用文档](http://help.aliyun.com/manual?spm=0.0.0.0.JtUkjp&lastSortId=278)。
+更多信息，参见[Quick Start of Java](https://github.com/AliCloudEngine/doc/wiki/quick-start-of-java)。
 
 > 本Demo的线上运行的应用的URL： http://ace-showcase.aliapp.com/ 。
 
