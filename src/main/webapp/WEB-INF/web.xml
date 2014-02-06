@@ -16,6 +16,10 @@
 	</servlet>
 
 	<servlet>
+		<servlet-name>HelloAce</servlet-name>
+		<servlet-class>com.alibaba.ace.demo.HelloAce</servlet-class>
+	</servlet>
+	<servlet>
 		<servlet-name>CacheServiceDemo</servlet-name>
 		<servlet-class>com.alibaba.ace.demo.service.CacheServiceDemo</servlet-class>
 	</servlet>
@@ -35,6 +39,10 @@
 	<servlet-mapping>
 		<servlet-name>helloJSP</servlet-name>
 		<url-pattern>/HelloAce.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HelloAce</servlet-name>
+		<url-pattern>/HelloAce.do</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>CacheServiceDemo</servlet-name>
