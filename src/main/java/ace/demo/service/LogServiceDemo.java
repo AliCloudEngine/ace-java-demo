@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 public class LogServiceDemo extends HttpServlet {
     private static final long serialVersionUID = -1120930759438832012L;
-    private Logger logger = LoggerFactory.getLogger(LogServiceDemo.class);
+    private static Logger logger = LoggerFactory.getLogger(LogServiceDemo.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
