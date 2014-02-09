@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
+ * Simple demo of {@link com.alibaba.appengine.api.store.StoreService}
+ *
  * @author ding.lid
  */
 public class StoreServiceDemo extends HttpServlet {

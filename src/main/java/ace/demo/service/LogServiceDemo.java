@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
+ * Simple demo of Log Service
+ *
  * @author lei.yaol
  * @author ding.lid
  */
