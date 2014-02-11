@@ -34,12 +34,6 @@
 		</dependency>
 		<!-- ace libs -->
 		<dependency>
-			<groupId>com.aliyun.openservices</groupId>
-			<artifactId>ace4j-sdk-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>com.alibaba.appengine</groupId>
 			<artifactId>services-api</artifactId>
 			<version>1.0.1</version>
