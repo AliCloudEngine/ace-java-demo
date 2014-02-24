@@ -41,8 +41,8 @@ public class CacheServiceDemo2 extends HttpServlet {
         }
 
         // test putIfUntouched
-        CasValue cas = cacheService.getCas(key);
-        success = cacheService.putIfUntouched(cas, 10L, 1000);
+        CacheService.IdentifiableValue identifiable = cacheService.getIdentifiable(key);
+        success = cacheService.putIfUntouched(key, identifiable, 10L, 1000);
         if (!success) {
             resp.getWriter().printf("Fail to putIfUntouched, key %s\n", key);
             return;
