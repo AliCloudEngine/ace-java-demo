@@ -32,6 +32,10 @@
 		<servlet-class>ace.demo.service.FetchUrlServiceDemo</servlet-class>
 	</servlet>
 	<servlet>
+		<servlet-name>MailServiceDemo</servlet-name>
+		<servlet-class>ace.demo.service.MailServiceDemo</servlet-class>
+	</servlet>
+	<servlet>
 		<servlet-name>LogServiceDemo</servlet-name>
 		<servlet-class>ace.demo.service.LogServiceDemo</servlet-class>
 	</servlet>
@@ -55,6 +59,10 @@
 	<servlet-mapping>
 		<servlet-name>FetchUrlServiceDemo</servlet-name>
 		<url-pattern>/FetchUrlServiceDemo.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MailServiceDemo</servlet-name>
+		<url-pattern>/MailServiceDemo.do</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>LogServiceDemo</servlet-name>
