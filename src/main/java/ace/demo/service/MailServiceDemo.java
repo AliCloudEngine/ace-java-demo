@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Simple demo of {@link com.alibaba.appengine.api.cache.CacheService}
+ * Simple demo of {@link com.alibaba.appengine.api.mail.MailService}
  *
  * @author ding.lid
  */
