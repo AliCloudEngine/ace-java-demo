@@ -34,7 +34,7 @@ public class CacheServiceDemo extends HttpServlet {
         String get = (String) cacheService.get(key);
         resp.getWriter().printf("Read value %s to key %s.\n", key, get);
 
-        if (value.equals(key)) {
+        if (value.equals(get)) {
             resp.getWriter().println("Cache service test ok!");
         } else {
             resp.getWriter().printf("Fail to get, expect %s, actual %s!\n", value, get);
