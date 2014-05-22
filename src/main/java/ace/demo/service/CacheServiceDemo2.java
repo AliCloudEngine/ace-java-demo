@@ -2,7 +2,6 @@ package ace.demo.service;
 
 import com.alibaba.appengine.api.cache.CacheService;
 import com.alibaba.appengine.api.cache.CacheServiceFactory;
-import com.alibaba.appengine.api.cache.CasValue;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

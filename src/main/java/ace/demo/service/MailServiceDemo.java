@@ -23,7 +23,7 @@ public class MailServiceDemo extends HttpServlet {
         resp.getWriter().println("Begin mail service test.");
 
         MailService mailService = MailServiceFactory.getMailService();
-        mailService.send(new MailMessage("foo@gmail.com", "oldratlee@gmail.com", "Hello", "From Mail Service"));
+        mailService.send(new MailMessage("your_from@gmail.com", "your_to@gmail.com", "Hello", "From Mail Service"));
 
         resp.getWriter().println("Finish mail service test.");
     }
