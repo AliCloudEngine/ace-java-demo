@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Demo WebSocket Chat</title>
+<script>
+    var url = window.location.href;
+    var arr = url.split("/");
+    var result = arr[0] + "//" + arr[2]
+    var ws_url = "ws://"+arr[2]+"/websocket/demo";
+    var ws = new WebSocket(ws_url);
+    ws.onopen = function(){};
+    ws.onmessage = function(message){
+        document.getElementById("chatlog").textContent += message.data + "\n";
+    };
+    
+    function postToServer(){
+        ws.send(document.getElementById("msg").value);
+        document.getElementById("msg").value = "";
+    }
+    function closeConnect(){
+        ws.close();
+    }
+    
+</script>
+</head>
+<body>
+<textarea rows="10" cols="70" maxlength="800" id="chatlog" readonly></textarea><br/>
+<input id="msg" type="text" />
+<button type="submit" id="sendButton" onClick="postToServer()">Send!</button>
+<button type="submit" id="sendButton" onClick="closeConnect()">End</button>
+</body>
+</html>
