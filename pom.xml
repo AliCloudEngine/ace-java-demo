@@ -17,8 +17,14 @@
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>3.0</version>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-api</artifactId>
+			<version>1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- logging libs -->
@@ -39,14 +45,6 @@
 			<version>1.4.15</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		<!-- websocket api -->
-		<dependency>
-            <groupId>javax.websocket</groupId>
-            <artifactId>javax.websocket-api</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
 	</dependencies>
 
 	<build>
