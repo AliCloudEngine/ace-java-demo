@@ -14,6 +14,21 @@ Demo应用，演示`ACE`的功能：
 
 代码如何使用，请直接看示例代码实现。
 
+获取工程代码
+---------------------------------
+
+### 通过`git`
+
+```bash
+git clone git@github.com:AliCloudEngine/ace-java-demo.git
+```
+
+### 通过`svn`
+
+```bash
+svn checkout https://github.com/AliCloudEngine/ace-java-demo/trunk ace-java-demo
+```
+
 如何编译打包
 ---------------------------------
 
