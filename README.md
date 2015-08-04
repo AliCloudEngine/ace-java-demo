@@ -47,8 +47,6 @@ svn checkout https://github.com/AliCloudEngine/ace-java-demo/trunk ace-java-demo
 
 更多信息，参见[Quick Start of Java](https://github.com/AliCloudEngine/doc/wiki/quick-start-of-java)。
 
-> 本Demo的线上运行的应用的URL： http://ace-showcase.aliapp.com/ 。
-
 FAQ
 ---------------------------------
 
