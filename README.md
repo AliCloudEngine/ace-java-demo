@@ -6,7 +6,6 @@ Demo应用，演示`ACE`的功能：
 - `ACE`服务的使用
     - `Cache`服务（缓存）
     - `Store`服务（文件存储）
-    - `FetchUrl`服务（Http请求代理）
     - `Log`服务（收集日志在ACE控制台上查看）
     - `Mail`服务（发送邮件）
 - `ACE`环境配置的读取
